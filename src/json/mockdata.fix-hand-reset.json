@@ -1,0 +1,75 @@
+{
+  "games" : [
+    {
+      "id": 1234,
+      "count" : 1,
+      "log": {
+        "player": "",
+        "action": ""
+      },
+      "basket" : [ {
+        "card" : "わ",
+        "hadPlayerId" : 1111
+      }],
+      "deck" : [ "あ", "い", "う", "え", "お", "か", "き", "く", "け", "こ", "さ", "し", "す", "せ", "そ" ],
+      "players" : [
+        {
+          "id": 1,
+          "hand" : ["ら", "り", "る", "れ", "ろ"],
+          "master" : true,
+          "name" : "aaaa",
+          "winCount" : 1
+        },
+        {
+          "id": 2,
+          "hand" : ["か", "き", "く", "け", "こ"],
+          "master" : false,
+          "name" : "bbbb",
+          "winCount" : 0
+        },
+        {
+          "id": 3,
+          "hand" : ["さ", "し", "す", "せ"],
+          "master" : false,
+          "name" : "cccc",
+          "winCount" : 0
+        },
+        {
+          "id": 4,
+          "hand" : ["た", "ち", "つ"],
+          "master" : false,
+          "name" : "dddd",
+          "winCount" : 0
+        },
+        {
+          "id": 5,
+          "hand" : ["な", "に"],
+          "master" : false,
+          "name" : "eeee",
+          "winCount" : 0
+        },
+        {
+          "id": 6,
+          "hand" : ["は", "ひ"],
+          "master" : false,
+          "name" : "ffff",
+          "winCount" : 0
+        },
+        {
+          "id": 7,
+          "hand" : ["ら", "り"],
+          "master" : false,
+          "name" : "gggg",
+          "winCount" : 0
+        },
+        {
+          "id": 8,
+          "hand" : ["わ"],
+          "master" : false,
+          "name" : "hhhh",
+          "winCount" : 0
+        }
+      ]
+    }
+  ]
+}

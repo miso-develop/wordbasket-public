@@ -1,0 +1,110 @@
+@mixin flexCenter($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin cardSize($cardWidth) {
+  width: $cardWidth;
+  min-width: $cardWidth;
+  height: $cardWidth * 1.414;
+
+  font-size: $cardWidth / 3;
+}
+
+
+
+.game {
+  @include flexCenter(column);
+}
+
+/* TODO: 名前微妙 */
+#center-block {
+  @include flexCenter();
+
+  margin: 2rem 0;
+}
+
+.card {
+  @include flexCenter(column);
+  
+  @include cardSize(6rem);
+
+  margin: 1rem;
+  padding: 1rem;
+
+  border: solid 1px #bbb;
+  background-color: #eee;
+
+  text-align: center;
+}
+
+button {
+  width: 12rem;
+
+  margin: 1rem;
+  padding: 1rem;
+
+  border: solid 1px #888;
+  border-radius: 0.5rem;
+}
+
+input {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border: solid 1px #bbb;
+  border-radius: 0.5rem;
+  width: 10rem;
+  text-align: center;
+}
+
+/* TODO: vue-toasted overwrite */
+.toasted-container {
+  .toasted {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    font-size: 1rem !important;
+    border-radius: 4rem !important;
+    min-height: 0 !important;
+    margin-top: 1rem;
+    padding: 1rem 2rem !important;
+  }
+}
+
+
+
+/* sp */
+@media only screen and (max-width: 600px) {
+  .card {
+    @include cardSize(4rem);
+
+    margin: 0.25rem;
+    padding: 0;
+  }
+
+  button {
+    width: 6rem;
+
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+    font-size: 0.8rem;
+  }
+
+  input {
+    font-size: 1.5rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  /* TODO: vue-toasted overwrite */
+  .toasted-container {
+    min-width: auto !important;
+    margin: 1rem !important;
+    
+    .toasted {
+      border-radius: 2rem !important;
+      padding: 0.5rem 2rem !important;
+    }
+  }
+}

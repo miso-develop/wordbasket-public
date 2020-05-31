@@ -1,0 +1,19 @@
+{
+  "URL_COPY": "URLをコピーしました！",
+  "ActionText": {
+    "created": "参加しました",
+    "gameStart": "ゲームを開始しました",
+    "reject": "差し戻しを行いました",
+    "penalty": "ペナルティカードを引きました",
+    "deliberation": "審議を開始しました",
+    "endDeliberation": "審議を終了しました",
+    "resetBasket": "バスケットをリセットしました",
+    "resetHand": "手札をリセットしました",
+    "throw": " 「${card}」 を出しました"
+  },
+  "Error": {
+    "NO_VACANCY": "部屋が満員です！\n新しい部屋へ移動します。",
+    "EMPTY_DECK": "山札がありません！",
+    "CANT_REJECT": "差し戻しできません！"
+  }
+}
